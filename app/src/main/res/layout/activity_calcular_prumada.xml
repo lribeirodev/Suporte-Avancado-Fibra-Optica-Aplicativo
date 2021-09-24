@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CalcularPrumada">
+
+
+    <TextView
+        android:id="@+id/textView_PR6"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/newPrimary"
+        android:letterSpacing="0.1"
+        android:padding="10dp"
+        android:text="AVISO"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAviso_Prumada"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/fundo_texto"
+        android:padding="10dp"
+        android:text="Padrão para Prumada 6 Fibras por Tubo"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_PR6" />
+
+    <TextView
+        android:id="@+id/textViewAviso_Prumada2"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/newPrimary"
+        android:padding="15dp"
+        android:text="Digite a Númeração da Prumada Para Saber a Cor da Fibra e do Tubo"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAviso_Prumada" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout_Prumada"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAviso_Prumada2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNumero_Prumada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:digits="1234567890"
+            android:hint="DIGITE NÚMERAÇÃO PRUMADA"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout_Prumada2"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout_Prumada">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView_PR2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/newPrimary"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="COR DO TUBO"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCorTubo_Prumada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fundo_texto"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:id="@+id/textView_PR1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/newPrimary"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="COR DA FIBRA"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCorFibra_Prumada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fundo_texto"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView_PR3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/newPrimary"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="CABO"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCabo_Prumada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fundo_texto"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView_PR4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/newPrimary"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="BANDEJA DGOI"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewBandejaDGOI_Prumada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fundo_texto"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp">
+
+            <TextView
+                android:id="@+id/textView_PR5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/newPrimary"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="CAIXA Nº"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewCaixa_Prumada"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/fundo_texto"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center_horizontal"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonVoltar_Prumada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLTAR"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonCalcular_Prumada"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCalcular_Prumada"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCalcular_Prumada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/newPrimary"
+        android:text="CALCULAR"
+        app:layout_constraintEnd_toStartOf="@+id/buttonLimpar_Prumada"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonVoltar_Prumada"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout_Prumada2" />
+
+    <Button
+        android:id="@+id/buttonLimpar_Prumada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="LIMPAR"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonCalcular_Prumada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonCalcular_Prumada" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

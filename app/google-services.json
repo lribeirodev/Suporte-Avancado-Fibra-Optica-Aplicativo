@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "353351845180",
+    "project_id": "app-avancado-fttx",
+    "storage_bucket": "app-avancado-fttx.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:353351845180:android:0488553777ef2ad977ca39",
+        "android_client_info": {
+          "package_name": "br.ribeiro.suporteavancadofttx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "353351845180-enclmg2196rg548808gfk29hsogeodre.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.ribeiro.suporteavancadoftxx",
+            "certificate_hash": "7876a7c8e841e082bc3fe55154b83035430efb93"
+          }
+        },
+        {
+          "client_id": "353351845180-dqasj4brobgg2fhv6v84apric2drub7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjh7lm9-G40zzSA2w7g4Z22QO45UifJUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "353351845180-dqasj4brobgg2fhv6v84apric2drub7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
